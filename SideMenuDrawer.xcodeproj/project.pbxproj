@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BDB6CB3F28BDEB3D00D50C9C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB6CB3E28BDEB3D00D50C9C /* MainViewController.swift */; };
+		BDBD741028C9128900EBE43B /* LoadBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBD740F28C9128800EBE43B /* LoadBundle.swift */; };
 		BDBF4F8B28C0CB300092584B /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBF4F8A28C0CB300092584B /* SettingViewController.swift */; };
 		BDBF51C928C1CE4A0092584B /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBF51C828C1CE4A0092584B /* SideMenuModel.swift */; };
 		BDDF2BAE28B8A27E0015CEC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF2BAD28B8A27E0015CEC6 /* AppDelegate.swift */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		BDB6CB3E28BDEB3D00D50C9C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BDBD740F28C9128800EBE43B /* LoadBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadBundle.swift; sourceTree = "<group>"; };
 		BDBF4F8A28C0CB300092584B /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		BDBF51C828C1CE4A0092584B /* SideMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
 		BDDF2B9D28B8A2450015CEC6 /* SideMenuDrawer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SideMenuDrawer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +114,7 @@
 		BDDF2B9F28B8A2450015CEC6 /* SideMenuDrawer */ = {
 			isa = PBXGroup;
 			children = (
+				BDBD740F28C9128800EBE43B /* LoadBundle.swift */,
 				BDDF2BCA28B8B6A70015CEC6 /* SideMenuCell.swift */,
 				BDDF2BC928B8B6A60015CEC6 /* SideMenuCell.xib */,
 				BDDF2BCD28B8C6230015CEC6 /* SideMenuView.xib */,
@@ -265,6 +268,7 @@
 				BDBF51C928C1CE4A0092584B /* SideMenuModel.swift in Sources */,
 				BDDF2BD028B8C63C0015CEC6 /* SideMenuView.swift in Sources */,
 				BDDF2BCC28B8B6A70015CEC6 /* SideMenuCell.swift in Sources */,
+				BDBD741028C9128900EBE43B /* LoadBundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

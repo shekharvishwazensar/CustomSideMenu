@@ -49,7 +49,7 @@ public protocol SideMenuViewControllerDelegate {
     // MARK: - Methods
     private func loadFromXib() {
         
-        let nib = UINib(nibName: "SideMenuView", bundle: Bundle(for: SideMenuCell.self))
+        let nib = UINib(nibName: "SideMenuView", bundle: LoadBundle.bundle(view: SideMenuView.self))
         guard let customCaptchaView = nib.instantiate(withOwner: self).first as? UIView else { return }
         addSubview(customCaptchaView)
         
