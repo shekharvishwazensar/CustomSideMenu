@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tlw-Wu-We4">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Side Menu Drawer View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SideMenuID" id="BYZ-38-t0r" customClass="SideMenuDrawerViewController" customModule="SideMenuExampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z07-fq-Nct" customClass="SideMenuView" customModule="SideMenuDrawer">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wq8-6v-7gx"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Z07-fq-Nct" secondAttribute="bottom" id="5Gs-Qo-Rjb"/>
+                            <constraint firstItem="Z07-fq-Nct" firstAttribute="trailing" secondItem="Wq8-6v-7gx" secondAttribute="trailing" id="Upo-0T-zb8"/>
+                            <constraint firstItem="Z07-fq-Nct" firstAttribute="top" secondItem="Wq8-6v-7gx" secondAttribute="top" id="dzB-7e-8qX"/>
+                            <constraint firstItem="Z07-fq-Nct" firstAttribute="leading" secondItem="Wq8-6v-7gx" secondAttribute="leading" id="fCe-qx-IB6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Odc-O6-zxb"/>
+                    <connections>
+                        <outlet property="menuView" destination="Z07-fq-Nct" id="MDl-Zc-Xtw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="714.49275362318849" y="105.80357142857143"/>
+        </scene>
+        <!--Side Menu Main View Controller-->
+        <scene sceneID="Yxe-hr-S1U">
+            <objects>
+                <viewController id="Tlw-Wu-We4" customClass="SideMenuMainViewController" customModule="SideMenuExampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2cs-gX-d92">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4Qh-Ns-m33"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6kI-wS-lFK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1526" y="100"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="Xuw-By-BkR">
+            <objects>
+                <viewController id="rJf-UB-3g7" customClass="HomeViewController" customModule="SideMenuExampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o99-1J-rEN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="YUE-jh-bBL"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7OD-ZB-2zv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q6h-49-9F0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3191.304347826087" y="99.776785714285708"/>
+        </scene>
+        <!--Setting View Controller-->
+        <scene sceneID="9lR-eB-5eq">
+            <objects>
+                <viewController id="k3K-hg-NEp" customClass="SettingViewController" customModule="SideMenuExampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XAt-k3-STZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="F5w-V3-OO2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3X2-y2-XZE">
+                        <barButtonItem key="leftBarButtonItem" image="line.3.horizontal" catalog="system" id="ZaX-MH-cAX"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="sideMenuBtn" destination="ZaX-MH-cAX" id="aMA-Ig-zbP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BaJ-eP-nNY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5057" y="94"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JST-zj-nTA">
+            <objects>
+                <navigationController storyboardIdentifier="HomeNavID" automaticallyAdjustsScrollViewInsets="NO" id="RPs-hx-5ND" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="v5s-eV-xgN">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rJf-UB-3g7" kind="relationship" relationship="rootViewController" id="uGU-EX-d4V"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SaW-i4-wbS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2490" y="100"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SiL-m3-Esd">
+            <objects>
+                <navigationController storyboardIdentifier="SettingID" automaticallyAdjustsScrollViewInsets="NO" id="dwi-UY-5rf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="606-kO-NRh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="k3K-hg-NEp" kind="relationship" relationship="rootViewController" id="aqO-HC-1Te"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CQm-UA-xbQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4237.68115942029" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="line.3.horizontal" catalog="system" width="128" height="64"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
